@@ -2,7 +2,15 @@ import java.util.ArrayList;
 
 public class Alumno {
 
+
+    
+
+    /**
+     * @param declaración de variables private
+     */
+
     String nombre;
+
     private int edad;
     private ArrayList<Matricula> matriculas;
 
