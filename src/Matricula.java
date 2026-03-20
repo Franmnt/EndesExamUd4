@@ -1,8 +1,8 @@
 public class Matricula {
 
-    public Alumno alumno;
-    public Asignatura asignatura;
-    public Profesor profesor;
+    private Alumno alumno;
+    private Asignatura asignatura;
+    private Profesor profesor;
     public double nota;
 
     public Matricula(Alumno alumno, Asignatura asignatura, Profesor profesor, double nota) {
