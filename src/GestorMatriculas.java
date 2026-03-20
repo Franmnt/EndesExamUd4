@@ -2,6 +2,10 @@ import java.util.ArrayList;
 
 public class GestorMatriculas {
 
+    /**
+     * @author Francisco Montilla
+     */
+
     public ArrayList<Matricula> matriculas;
 
     public GestorMatriculas() {
@@ -33,6 +37,13 @@ public class GestorMatriculas {
     }
 
     public void mostrarAprobados() {
+
+        /**
+         * @param contador de matriculas
+         * @param condición de m.nota mayor o igual que 5
+         * @return mostrar nota y nombre del alumno de la matricula
+         */
+
         for (Matricula m : matriculas) {
             if (m.nota >= 5) {
                 System.out.println("APROBADO: " + m.alumno.nombre);
@@ -52,6 +63,7 @@ public class GestorMatriculas {
 
     public double mediaGlobal() {
         double suma = 0;
+
 
         for (Matricula m : matriculas) {
             suma += m.nota;
