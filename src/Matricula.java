@@ -1,8 +1,8 @@
-public class Matricula {
+public class Matricula extends MatriculaPadre {
 
-    private Alumno alumno;
-    private Asignatura asignatura;
-    private Profesor profesor;
+    Alumno alumno;
+    Asignatura asignatura;
+    Profesor profesor;
     public double nota;
 
     public Matricula(Alumno alumno, Asignatura asignatura, Profesor profesor, double nota) {
@@ -12,9 +12,4 @@ public class Matricula {
         this.nota = nota;
     }
 
-    public void mostrar() {
-        System.out.println(alumno.nombre + " - " +
-                asignatura.nombre + " - " +
-                profesor.nombre + " - Nota: " + nota);
-    }
 }
